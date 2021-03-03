@@ -1,8 +1,19 @@
-/* RESET */
+:root {
+  /* font-size */
+  --large-font-size: 74px;
+  --meduim-font-size: 55.5px;
+}
+
 body {
-  font-family: "alternategotno2d", "NeuzeitGro-Bla", "Nanum Gothic", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "NeuzeitGro-Bla", "alternategotno2d", "Nanum Gothic", sans-serif;
+}
+
+/* RESET */
+h1 {
+  margin: 0;
 }
 
 ul,
@@ -13,8 +24,20 @@ li {
 }
 
 a {
+  color: rgb(22, 22, 22);
   text-decoration: none;
   cursor: pointer;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
+/* FONT */
+h1 {
+  font-size: var(--large-font-size);
 }
 
 /* IR */
@@ -29,8 +52,11 @@ a {
   padding: 0;
 }
 
+/* HEADER */
 #global-header {
+  width: 100%;
   z-index: 999;
+  position: fixed;
   background-color: #fff;
 }
 
@@ -45,6 +71,8 @@ a {
 }
 
 #gnb .nav__list {
+  font-size: 18px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,9 +89,73 @@ a {
   margin-left: 100px;
 }
 
+#gnb .nav-link {
+  display: inline-block;
+  position: relative;
+}
+
+#gnb .nav-item .nav-link:hover::after {
+  content: "";
+  width: 38px;
+  left: 50%;
+  margin-left: -19px;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  bottom: -15px;
+  background-color: rgb(219, 25, 52);
+}
+
 #gnb .btn--search {
   background: url("../img/icons/icon-search-dark.svg") no-repeat;
   background-size: contain;
   width: 18px;
   height: 18px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 91.66666%;
+  max-width: 1320px;
+  height: 742px;
+}
+
+/* MAIN */
+#hero--beats-flex {
+  padding-top: 110px;
+}
+
+.hero-img {
+  background: url("../img/hp-01.jpg.large.1x.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 659px;
+}
+
+.hero-copy {
+  margin-top: 8px;
+}
+
+.hero-copy h1 {
+  font-weight: 900;
+}
+
+.hero-copy h1 span {
+  font-size: var(--meduim-font-size);
+  font-weight: 900;
+  line-height: 1.52;
+  font-family: "NeuzeitGro-Bla";
+  vertical-align: top;
+}
+
+.hero-copy button {
+  color: rgb(148, 148, 148);
+  font-size: 24.833px;
+  font-weight: 700;
+  transition: 0.5s;
+  letter-spacing: -1;
+}
+
+.hero-copy button:hover {
+  color: rgb(219, 25, 52);
 }
