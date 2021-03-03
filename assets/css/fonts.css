@@ -1,0 +1,19 @@
+/* alternategotno2d */
+@font-face {
+  font-family: "alternategotno2d";
+  src: url("../fonts/alternategotno2d.eot");
+  src: url("../fonts/alternategotno2d.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/alternategotno2d.woff2") format("woff2"),
+    url("../fonts/alternategotno2d.woff") format("woff"),
+    url("../fonts/alternategotno2d.ttf") format("truetype");
+}
+
+/* NeuzeitGro-Bla */
+@font-face {
+  font-family: "NeuzeitGro-Bla";
+  src: url("../fonts/NeuzeitGro-Bla.eot");
+  src: url("../fonts/NeuzeitGro-Bla.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NeuzeitGro-Bla.woff2") format("woff2"),
+    url("../fonts/NeuzeitGro-Bla.woff") format("woff"),
+    url("../fonts/NeuzeitGro-Bla.ttf") format("truetype");
+}
