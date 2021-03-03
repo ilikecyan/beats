@@ -1,7 +1,9 @@
 :root {
   /* font-size */
   --large-font-size: 74px;
-  --meduim-font-size: 55.5px;
+  --medium-font-size: 55.5px;
+  --sm-medium-font-size: 33.1111px;
+  --sm-font-size: 24.8333px;
 }
 
 body {
@@ -12,7 +14,8 @@ body {
 }
 
 /* RESET */
-h1 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -33,11 +36,39 @@ button {
   background-color: #fff;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+/* COMMON */
+.container {
+  margin: 0 auto;
+  width: 91.66666%;
+  max-width: 1320px;
+  height: 742px;
+}
+
+.btn--more {
+  color: rgb(148, 148, 148);
+  font-size: 24.833px;
+  font-weight: 700;
+  transition: 0.5s;
+  letter-spacing: -1;
+}
+
+.btn--more:hover {
+  color: rgb(219, 25, 52);
 }
 
 /* FONT */
 h1 {
   font-size: var(--large-font-size);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--sm-medium-font-size);
+  line-height: 36.7553px;
+  text-transform: uppercase;
 }
 
 /* IR */
@@ -58,6 +89,7 @@ h1 {
   z-index: 999;
   position: fixed;
   background-color: #fff;
+  transition: 0.6s;
 }
 
 #gnb {
@@ -113,14 +145,8 @@ h1 {
   height: 18px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 91.66666%;
-  max-width: 1320px;
-  height: 742px;
-}
-
 /* MAIN */
+/* Hero Beats Flex */
 #hero--beats-flex {
   padding-top: 110px;
 }
@@ -141,21 +167,45 @@ h1 {
 }
 
 .hero-copy h1 span {
-  font-size: var(--meduim-font-size);
+  font-size: var(--medium-font-size);
   font-weight: 900;
   line-height: 1.52;
   font-family: "NeuzeitGro-Bla";
   vertical-align: top;
 }
 
-.hero-copy button {
-  color: rgb(148, 148, 148);
-  font-size: 24.833px;
-  font-weight: 700;
-  transition: 0.5s;
-  letter-spacing: -1;
+/* POWER BEATS */
+#powerbeats {
+  padding-top: 75px;
 }
 
-.hero-copy button:hover {
-  color: rgb(219, 25, 52);
+.bg-wrap {
+  display: flex;
+}
+
+.bg-left {
+  background: url("../img/hp-02.jpg.large.2x.jpg") no-repeat;
+  background-size: contain;
+  width: 582px;
+  height: 582px;
+}
+
+.bg-right {
+  background: url("../img/hp-03.jpg.large.2x.jpg") no-repeat;
+  background-size: contain;
+  width: 582px;
+  height: 582px;
+}
+
+.left-copy,
+.right-copy {
+  margin-top: 8px;
+}
+
+#powerbeats .left-copy h2 span,
+#powerbeats .right-copy h2 span {
+  font-size: var(--sm-font-size);
+  vertical-align: middle;
+  text-rendering: optimizeSpeed;
+  letter-spacing: -1px;
 }
