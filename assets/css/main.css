@@ -59,6 +59,17 @@ button {
   color: rgb(219, 25, 52);
 }
 
+.copy {
+  margin-top: 8px;
+}
+
+.copy h2 span {
+  font-size: var(--sm-font-size);
+  vertical-align: middle;
+  text-rendering: optimizeSpeed;
+  letter-spacing: -1px;
+}
+
 /* FONT */
 h1 {
   font-size: var(--large-font-size);
@@ -197,15 +208,10 @@ h2 {
   height: 582px;
 }
 
-.left-copy,
-.right-copy {
-  margin-top: 8px;
-}
-
-#powerbeats .left-copy h2 span,
-#powerbeats .right-copy h2 span {
-  font-size: var(--sm-font-size);
-  vertical-align: middle;
-  text-rendering: optimizeSpeed;
-  letter-spacing: -1px;
+/* Beats HeadPhone */
+.beats-headphone-img {
+  background: url("../img/hp-04.jpg.large.2x.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 659px;
 }
